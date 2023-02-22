@@ -5,12 +5,12 @@ import re
 import django
 from django.utils import translation
 
+from wagtail_sb_admin_interface import __version__
 from wagtail_sb_admin_interface.cache import (
     get_cached_active_theme,
     set_cached_active_theme,
 )
 from wagtail_sb_admin_interface.models import Theme
-from wagtail_sb_admin_interface.version import __version__
 
 if django.VERSION < (1, 10):
     from django.core.urlresolvers import NoReverseMatch, reverse
