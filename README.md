@@ -29,13 +29,15 @@ pip install wagtail-sb-admin-interface
 
 ## Usage
 
-Add `wagtail.contrib.settings` and `wagtail_sb_admin_interface` to your `INSTALLED_APPS` settings
+Add `wagtail.contrib.settings`, `wagtail.contrib.modeladmin`, `colorfield` and `wagtail_sb_admin_interface` to your `INSTALLED_APPS` settings
 
 ```
 INSTALLED_APPS = [
+  "wagtail_sb_admin_interface",
   # ...
   "wagtail.contrib.settings",
-  "wagtail_sb_admin_interface",
+  "wagtail.contrib.modeladmin",
+  "colorfield",
   # ...
 ]
 ```
