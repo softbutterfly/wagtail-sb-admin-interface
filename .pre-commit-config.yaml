@@ -1,0 +1,55 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+
+  - repo: https://github.com/asottile/seed-isort-config
+    rev: v2.2.0
+    hooks:
+      - id: seed-isort-config
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+      - id: isort
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+
+  - repo: https://github.com/ambv/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+        stages: [commit]
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+        files: ^src/
+
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.4
+    hooks:
+      - id: bandit
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+        args: [-c, .bandit, -r, src]
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: poetry run pylint
+        language: system
+        types: [python]
+        exclude: ^.*\b(migrations|demoproject)\b.*$
+        args: [--rcfile, .pylintrc, --load-plugins, pylint_django, --ignore, migrations, --ignore, demoproject, --disable, django-not-configured]
