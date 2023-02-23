@@ -28,13 +28,9 @@ class HLS:
     @classmethod
     def from_hex(cls, hex_color: str) -> "HLS":
         """Create a HLS color from a hex color."""
-        print(hex_color)
         RGB = tuple(int(hex_color[i : i + 2], 16) for i in (1, 3, 5))
-        print(RGB)
         rgb = tuple(c / 255.0 for c in RGB)
-        print(rgb)
         hls = colorsys.rgb_to_hls(*rgb)
-        print(hls)
         return cls(hls[0] * 360, hls[1] * 100, hls[2] * 100)
 
 
