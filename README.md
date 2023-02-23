@@ -9,11 +9,10 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3d703e48c1e44e9b830da5026f07c52d)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-admin-interface/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=softbutterfly/wagtail-sb-admin-interface&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/3d703e48c1e44e9b830da5026f07c52d)](https://www.codacy.com/gh/softbutterfly/wagtail-sb-admin-interface/dashboard?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/wagtail-sb-admin-interface&utm_campaign=Badge_Coverage)
 [![codecov](https://codecov.io/gh/softbutterfly/wagtail-sb-admin-interface/branch/master/graph/badge.svg?token=pbqXUUOu1F)](https://codecov.io/gh/softbutterfly/wagtail-sb-admin-interface)
-[![Requirements Status](https://requires.io/github/softbutterfly/wagtail-sb-admin-interface/requirements.svg?branch=master)](https://requires.io/github/softbutterfly/wagtail-sb-admin-interface/requirements/?branch=master)
 
-# Wagtail Social Networks
+# Wagtail Admin Interface
 
-Wagtail package to manage sites social network profiles.
+Wagtail package to customize admin dashboard.
 
 ## Requirements
 
