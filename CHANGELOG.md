@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+* Remove innecesary template and statci files
+* Update README.md
+* Add reference to django-admin-interface as inspiration, thanks to @fabiocaccamo :smile:
+
 ## [0.1.0] - 2023-02-22
 
 * Fix README.md
