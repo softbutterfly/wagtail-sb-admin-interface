@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.1.0] - 2023-02-22
+
 * Fix README.md
 * Remove reference to requires.io.
 
